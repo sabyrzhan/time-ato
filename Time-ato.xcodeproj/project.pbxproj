@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F5E4A73628DF4417002396CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A73528DF4417002396CC /* AppDelegate.swift */; };
-		F5E4A73828DF4417002396CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A73728DF4417002396CC /* ViewController.swift */; };
 		F5E4A73A28DF4417002396CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E4A73928DF4417002396CC /* Assets.xcassets */; };
 		F5E4A73D28DF4417002396CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E4A73B28DF4417002396CC /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		F5E4A73228DF4417002396CC /* Time-ato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time-ato.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E4A73528DF4417002396CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5E4A73728DF4417002396CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5E4A73928DF4417002396CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E4A73C28DF4417002396CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5E4A73E28DF4417002396CC /* Time_ato.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time_ato.entitlements; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				F5E4A73528DF4417002396CC /* AppDelegate.swift */,
-				F5E4A73728DF4417002396CC /* ViewController.swift */,
 				F5E4A73928DF4417002396CC /* Assets.xcassets */,
 				F5E4A73B28DF4417002396CC /* Main.storyboard */,
 				F5E4A73E28DF4417002396CC /* Time_ato.entitlements */,
@@ -131,7 +128,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5E4A73828DF4417002396CC /* ViewController.swift in Sources */,
 				F5E4A73628DF4417002396CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
