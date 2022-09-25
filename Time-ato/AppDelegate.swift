@@ -13,6 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet
     weak var statusMenu: NSMenu!
+    
+    var menuManager: NSMenuDelegate?
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -25,6 +27,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem?.button?.font = NSFont.monospacedDigitSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)
         
+        menuManager = MenuManager(statusMenu: statusMenu)
+        statusMenu.delegate = menuManager
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
