@@ -23,6 +23,7 @@ class MenuManager: NSObject, NSMenuDelegate {
     
     func menuWillOpen(_ menu: NSMenu) {
         menuIsOpen = true
+        showTasksInMenu()
     }
     
     func menuDidClose(_ menu: NSMenu) {
@@ -35,6 +36,25 @@ class MenuManager: NSObject, NSMenuDelegate {
         
         for _ in itemsBeforeTasks ..< stopAtIndex {
             statusMenu.removeItem(at: itemsBeforeTasks)
+        }
+    }
+    
+    func showTasksInMenu() {
+        var index = itemsBeforeTasks
+        var taskCounter = 0
+        
+        for task in tasks {
+            let item  = NSMenuItem()
+            item.title = task.title
+            
+            statusMenu.insertItem(item, at: index)
+            index+=1
+            taskCounter+=1
+            
+            if taskCounter.isMultiple(of: 4) {
+                statusMenu.insertItem(NSMenuItem.separator(), at: index)
+                index+=1
+            }
         }
     }
 }
