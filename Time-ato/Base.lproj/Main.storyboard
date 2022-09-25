@@ -21,9 +21,20 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="iKq-KO-B5U"/>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Start New Task" id="s9P-O7-dxN">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Edit Tasks…" id="KS7-M5-0hH">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Launch On Login" id="ucT-eb-ph4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Time-ato" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Time-ato" id="4sb-4s-VLi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
