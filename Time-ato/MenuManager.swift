@@ -43,9 +43,13 @@ class MenuManager: NSObject, NSMenuDelegate {
         var index = itemsBeforeTasks
         var taskCounter = 0
         
+        let itemFrame = NSRect(x:0, y:0, width: 270, height: 40)
+        
         for task in tasks {
             let item  = NSMenuItem()
-            item.title = task.title
+            let view = TaskView(frame: itemFrame)
+            view.task = task
+            item.view = view
             
             statusMenu.insertItem(item, at: index)
             index+=1
