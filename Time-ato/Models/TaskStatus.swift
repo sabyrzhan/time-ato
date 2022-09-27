@@ -53,9 +53,9 @@ enum TaskStatus: Int, Codable {
     case .notStarted:
       return .labelColor
     case .inProgress:
-      return .controlAccentColor
+      return .linkColor
     case .complete:
-      return .placeholderTextColor
+      return .secondaryLabelColor
     }
   }
 
