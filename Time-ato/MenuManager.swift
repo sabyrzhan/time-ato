@@ -11,7 +11,7 @@ import AppKit
 class MenuManager: NSObject, NSMenuDelegate {
     let statusMenu: NSMenu
     var menuIsOpen = false
-    var tasks = Task.sampleTasksWithStatus
+    var taskManager = TaskManager()
     
     let itemsBeforeTasks = 2
     let itemsAfterTasks = 6
@@ -45,7 +45,7 @@ class MenuManager: NSObject, NSMenuDelegate {
         
         let itemFrame = NSRect(x:0, y:0, width: 270, height: 40)
         
-        for task in tasks {
+        for task in taskManager.tasks {
             let item  = NSMenuItem()
             let view = TaskView(frame: itemFrame)
             view.task = task
