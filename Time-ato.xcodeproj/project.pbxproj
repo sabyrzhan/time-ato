@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F507EDD228DF8E5D003853B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F507EDD128DF8E5D003853B8 /* README.md */; };
 		F55DDAEF28E62B46001F219B /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DDAEE28E62B46001F219B /* TaskManager.swift */; };
+		F55DDAF128E630CA001F219B /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DDAF028E630CA001F219B /* TimerState.swift */; };
 		F5DC57C628E054C00035B08B /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC57C528E054C00035B08B /* MenuManager.swift */; };
 		F5DC57C828E069270035B08B /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC57C728E069270035B08B /* TaskView.swift */; };
 		F5E4A73628DF4417002396CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A73528DF4417002396CC /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		F507EDD128DF8E5D003853B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F55DDAEE28E62B46001F219B /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		F55DDAF028E630CA001F219B /* TimerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 		F5DC57C528E054C00035B08B /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		F5DC57C728E069270035B08B /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		F5E4A73228DF4417002396CC /* Time-ato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time-ato.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		F5E4A74428DF8C16002396CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F55DDAF028E630CA001F219B /* TimerState.swift */,
 				F5E4A74528DF8C16002396CC /* TaskTimes.swift */,
 				F5E4A74628DF8C16002396CC /* TaskStatus.swift */,
 				F5E4A74728DF8C16002396CC /* Task.swift */,
@@ -163,6 +166,7 @@
 				F5E4A74928DF8C16002396CC /* TaskStatus.swift in Sources */,
 				F5DC57C828E069270035B08B /* TaskView.swift in Sources */,
 				F5E4A73628DF4417002396CC /* AppDelegate.swift in Sources */,
+				F55DDAF128E630CA001F219B /* TimerState.swift in Sources */,
 				F55DDAEF28E62B46001F219B /* TaskManager.swift in Sources */,
 				F5E4A74828DF8C16002396CC /* TaskTimes.swift in Sources */,
 			);

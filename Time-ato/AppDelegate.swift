@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var startStopMenuItem: NSMenuItem!
     @IBOutlet weak var launchOnLoginMenuItem: NSMenuItem!
     
-    var menuManager: NSMenuDelegate?
+    var menuManager: MenuManager?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -40,6 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func startStopTask(_ sender: Any) {
+        menuManager?.taskManager.toggleTask()
     }
     
     @IBAction func showEditTasksWIndow(_ sender: Any) {
