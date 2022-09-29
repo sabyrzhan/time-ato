@@ -11,12 +11,12 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     
-    @IBOutlet
-    weak var statusMenu: NSMenu!
+    @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var startStopMenuItem: NSMenuItem!
+    @IBOutlet weak var launchOnLoginMenuItem: NSMenuItem!
     
     var menuManager: NSMenuDelegate?
-
-
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
@@ -39,6 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-
+    @IBAction func startStopTask(_ sender: Any) {
+    }
+    
+    @IBAction func showEditTasksWIndow(_ sender: Any) {
+    }
+    
+    @IBAction func toggleLaunchOnLogin(_ sender: Any) {
+    }
 }
 
